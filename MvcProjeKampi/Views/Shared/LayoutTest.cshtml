@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LayoutTest</title>
+</head>
+<body>
+    <h1>Selamlar</h1>
+    <div class="navbar navbar-collapse navbar-fixed-top">
+        <div class="navbar-header">
+            
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li>@Html.ActionLink("Index", "Index", "Test")</li>
+                <li>@Html.ActionLink("Index2", "Index2", "Test")</li>
+            </ul>
+
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+
+</body>
+</html>
